@@ -31,7 +31,7 @@ namespace HolePunching.Packets
             
             byte[] send_buffer = Encoding.ASCII.GetBytes(this.body);
 
-
+            Console.WriteLine("sending to " + endPoint.ToString());
             sock.SendTo(send_buffer, endPoint);
         }
     }
