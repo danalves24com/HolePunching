@@ -33,8 +33,7 @@ namespace HolePunching
 
             Menu menu = new Menu();
             menu.show();
-            String choice = menu.choice;
-            Console.WriteLine("selected opt " + choice);
+            String choice = menu.choice;            
             switch (choice)
             {
                 case "0":

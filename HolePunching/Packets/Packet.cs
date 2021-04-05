@@ -26,12 +26,12 @@ namespace HolePunching.Packets
             sock.Bind(local);
 
             IPAddress serverAddr = IPAddress.Parse(this.target.ip);
-            IPEndPoint endPoint = new IPEndPoint(serverAddr, (int)this.target.port);            
-            
-            
+            IPEndPoint endPoint = new IPEndPoint(serverAddr, (int)this.target.port);
+            Console.WriteLine("sending to " + endPoint.ToString());
+
             byte[] send_buffer = Encoding.ASCII.GetBytes(this.body);
 
-            Console.WriteLine("sending to " + endPoint.ToString());
+            
             sock.SendTo(send_buffer, endPoint);
         }
     }
