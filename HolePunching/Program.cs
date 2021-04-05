@@ -28,8 +28,10 @@ namespace HolePunching
 
             // ADD XML
             string targetIP = doc.SelectNodes("//remote//IP")[0].InnerText;
+            string localIP = doc.SelectNodes("/config/local/IP")[0].InnerText;
             int targetPort = int.Parse(doc.SelectNodes("/config/remote/PORT")[0].InnerText);
             int localPort = int.Parse(doc.SelectNodes("/config/local/PORT")[0].InnerText);
+
 
             Menu menu = new Menu();
             menu.show();
@@ -51,8 +53,7 @@ namespace HolePunching
                 case "1":
                     Console.WriteLine("[status]\tpreparing packet for {0}:{1}", targetIP, targetPort);
                     PacketBuilder builder = new PacketBuilder();
-                    Location location = new Location(ip: targetIP, port: targetPort);
-                    String localIP = new Puncher().getLocalIp();
+                    Location location = new Location(ip: targetIP, port: targetPort);                    
                     Location local = new Location(localIP, localPort); 
 
                     Console.WriteLine("[status]\tsending from {0}:{1}", localIP, localPort);
