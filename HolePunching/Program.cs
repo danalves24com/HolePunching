@@ -49,10 +49,13 @@ namespace HolePunching
                     Console.WriteLine("[status]\tpacket sent");
                     break;
                 case "1":
+                    Console.WriteLine("[status]\tpreparing packet for {0}:{1}", targetIP, targetPort);
                     PacketBuilder builder = new PacketBuilder();
                     Location location = new Location(ip: targetIP, port: targetPort);
-                    Location local = new Location(new Puncher().getLocalIp(), localPort); ;
-                    
+                    String localIP = new Puncher().getLocalIp();
+                    Location local = new Location(localIP, localPort); 
+
+                    Console.WriteLine("[status]\tsending from {0}:{1}", localIP, localPort);
                     builder.destination = location;
                     builder.body = "helo";
                     
@@ -86,3 +89,4 @@ namespace HolePunching
         }
     }
 }
+
