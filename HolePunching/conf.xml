@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+	<remote>
+		<IP>10.10.10.1</IP>
+		<PORT>42069</PORT>
+	</remote>
+	<local>
+		<PORT>57209</PORT>
+	</local>	
+</config>

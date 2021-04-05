@@ -1,0 +1,13 @@
+F:\Invoy\Projects\BORG\HolePunching\HolePunching\bin\Debug\netcoreapp3.1\HolePunching.exe
+F:\Invoy\Projects\BORG\HolePunching\HolePunching\bin\Debug\netcoreapp3.1\HolePunching.deps.json
+F:\Invoy\Projects\BORG\HolePunching\HolePunching\bin\Debug\netcoreapp3.1\HolePunching.runtimeconfig.json
+F:\Invoy\Projects\BORG\HolePunching\HolePunching\bin\Debug\netcoreapp3.1\HolePunching.runtimeconfig.dev.json
+F:\Invoy\Projects\BORG\HolePunching\HolePunching\bin\Debug\netcoreapp3.1\HolePunching.dll
+F:\Invoy\Projects\BORG\HolePunching\HolePunching\bin\Debug\netcoreapp3.1\HolePunching.pdb
+F:\Invoy\Projects\BORG\HolePunching\HolePunching\obj\Debug\netcoreapp3.1\HolePunching.csprojAssemblyReference.cache
+F:\Invoy\Projects\BORG\HolePunching\HolePunching\obj\Debug\netcoreapp3.1\HolePunching.AssemblyInfoInputs.cache
+F:\Invoy\Projects\BORG\HolePunching\HolePunching\obj\Debug\netcoreapp3.1\HolePunching.AssemblyInfo.cs
+F:\Invoy\Projects\BORG\HolePunching\HolePunching\obj\Debug\netcoreapp3.1\HolePunching.csproj.CoreCompileInputs.cache
+F:\Invoy\Projects\BORG\HolePunching\HolePunching\obj\Debug\netcoreapp3.1\HolePunching.dll
+F:\Invoy\Projects\BORG\HolePunching\HolePunching\obj\Debug\netcoreapp3.1\HolePunching.pdb
+F:\Invoy\Projects\BORG\HolePunching\HolePunching\obj\Debug\netcoreapp3.1\HolePunching.genruntimeconfig.cache
