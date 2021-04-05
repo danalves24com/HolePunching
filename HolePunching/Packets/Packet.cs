@@ -21,13 +21,16 @@ namespace HolePunching.Packets
             Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram,ProtocolType.Udp);
             
 
-            IPEndPoint local = new IPEndPoint(IPAddress.Parse(this.local.ip), (int)this.local.port);
-
-            sock.Bind(local);
+            IPEndPoint localEP = new IPEndPoint(IPAddress.Parse(this.local.ip), (int)this.local.port);
 
             IPAddress serverAddr = IPAddress.Parse(this.target.ip);
             IPEndPoint endPoint = new IPEndPoint(serverAddr, (int)this.target.port);
+
             Console.WriteLine("sending to " + endPoint + " from " + local);
+
+            sock.Bind(localEP);
+
+            
 
             byte[] send_buffer = Encoding.ASCII.GetBytes(this.body);
 
